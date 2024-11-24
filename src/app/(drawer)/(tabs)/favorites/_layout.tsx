@@ -1,5 +1,5 @@
 import { Stack, Tabs } from "expo-router";
 
-export default function HomeLayout() {
+export default function FavoritesLayout() {
   return <Stack />;
 }

@@ -3,17 +3,17 @@ import {
   DrawerItem,
   DrawerItemList,
 } from "@react-navigation/drawer";
-import { useRouter } from "expo-router";
+import { router, useRouter } from "expo-router";
 
 export default function CustomDrawer(props: any) {
-  const router = useRouter();
+  //const router = useRouter();
 
   return (
     <DrawerContentScrollView {...props}>
       <DrawerItem
         label={"LIST"}
         onPress={() => {
-          router.navigate("/list");
+          router.push("/list/index");
         }}
       />
     </DrawerContentScrollView>

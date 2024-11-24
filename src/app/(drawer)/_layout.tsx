@@ -1,9 +1,10 @@
 import { Stack, Tabs } from "expo-router";
 
-export default function AppLayout() {
+export default function DrawerStackLayout() {
   return (
     <Stack>
-      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack.Screen name="(tabs)" />
+      <Stack.Screen name="settings" />
     </Stack>
   );
 }
