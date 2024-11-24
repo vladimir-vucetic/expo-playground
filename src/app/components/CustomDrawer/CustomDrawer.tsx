@@ -13,7 +13,7 @@ export default function CustomDrawer(props: any) {
       <DrawerItem
         label={"LIST"}
         onPress={() => {
-          router.navigate("home/details");
+          router.navigate("/list");
         }}
       />
     </DrawerContentScrollView>
