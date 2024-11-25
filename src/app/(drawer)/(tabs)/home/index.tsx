@@ -3,8 +3,12 @@ import { Text } from "react-native";
 
 export default function Home() {
   return (
-    <Link href={"/settings"}>
-      <Text>HOME go to settings</Text>
-    </Link>
+    <>
+      <Text>Home index</Text>
+      <Link href={"/(drawer)/settings"}>
+        <Text>Go to settings outside of tabs</Text>
+        <Text>This same doesn't work on drawer</Text>
+      </Link>
+    </>
   );
 }

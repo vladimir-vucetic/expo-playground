@@ -9,26 +9,22 @@ export function CustomDrawer(props: any) {
       <DrawerItem
         label={"home"}
         onPress={() => {
-          router.navigate("/home");
+          router.navigate("(tabs)/home");
         }}
       />
       <DrawerItem
         label={"settings"}
         onPress={() => {
-          router.navigate("/settings");
+          router.push("/(drawer)/settings");
         }}
       />
     </DrawerContentScrollView>
   );
 }
-
 export default function DrawerLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <Drawer
-        drawerContent={CustomDrawer}
-        screenOptions={{ headerShown: false }}
-      />
+      <Drawer drawerContent={CustomDrawer} />
     </GestureHandlerRootView>
   );
 }
